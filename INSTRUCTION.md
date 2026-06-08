@@ -15,6 +15,18 @@ chmod +x bootstrap.sh
 ./bootstrap.sh
 ```
 
+`bootstrap.sh` deploys the following infrastructure files:
+
+- `.infrastructure/namespace.yml`
+- `.infrastructure/configMap.yml`
+- `.infrastructure/secret.yml`
+- `pv.yml`
+- `pvc.yml`
+- `.infrastructure/deployment.yml`
+- `.infrastructure/clusterIp.yml`
+- `.infrastructure/nodeport.yml`
+- `.infrastructure/hpa.yml`
+
 ## 1. Validate that the app is running
 
 Check that all pods are in `Running` state:
